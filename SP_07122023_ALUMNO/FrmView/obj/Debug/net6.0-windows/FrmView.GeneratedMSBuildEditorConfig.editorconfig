@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FrmView
-build_property.ProjectDir = C:\Users\Usuario\Desktop\SP_07122023_ALUMNO\SP_07122023_ALUMNO\FrmView\
+build_property.ProjectDir = C:\Documents\Facultad\Programacion2023C2\RSP_07122023\SP_07122023_ALUMNO\FrmView\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -8,7 +8,7 @@ using Entidades.DataBase;
 
 namespace Entidades.Modelos
 {
-    public class Hamburguesa 
+    public class Hamburguesa :IComestible
     {
 
         private static int costoBase;
@@ -30,7 +30,9 @@ namespace Entidades.Modelos
 
         public string Ticket => $"{this}\nTotal a pagar:{this.costo}";
 
+        public bool Estado { get; }
 
+        public string Imagen { get; }
 
         private void AgregarIngredientes()
         {

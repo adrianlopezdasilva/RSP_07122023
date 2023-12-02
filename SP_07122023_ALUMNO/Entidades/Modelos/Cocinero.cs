@@ -6,13 +6,17 @@ using Entidades.Interfaces;
 namespace Entidades.Modelos
 {
 
+    public delegate double DelegadoDemoraAtencion(double demora);
+    public delegate IComestible DelegadoNuevoIngreso(IComestible menu);
 
-    public class Cocinero
+
+    public class Cocinero <T>
     {
         private int cantPedidosFinalizados;
         private string nombre;
         private double demoraPreparacionTotal;
         private CancellationTokenSource cancellation;
+        private T menu;
 
         private Task tarea;
 
@@ -70,5 +74,9 @@ namespace Entidades.Modelos
             this.demoraPreparacionTotal += tiempoEspera;
 
         }
+
+        public event DelegadoDemoraAtencion OnDemora;
+        public event DelegadoNuevoIngreso OnIngreso;
+
     }
 }
